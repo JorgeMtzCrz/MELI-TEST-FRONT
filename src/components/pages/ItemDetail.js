@@ -19,7 +19,7 @@ export const ItemDetail = (props) => {
     
   },[id])
   if(!info) return <Loader/>
-
+  console.log(categories)
   return (
     <div>
       <Navbar/>

@@ -19,7 +19,7 @@ export const Items = (props) => {
     MY_SERVICE.ITEMS(params.search)
     .then(({data:{result}})=>{
       setItems({...result})
-      setCategories(typeof result.categories === 'object' ? [result.categories] : null)
+      setCategories(typeof result.categories === 'object' ? [...result.categories] : null)
     })
 
     .catch(error=> console.log(error))
