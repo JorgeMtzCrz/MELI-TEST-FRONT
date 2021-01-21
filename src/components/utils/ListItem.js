@@ -3,6 +3,8 @@ import shipping from '../../assets/ic_shipping.png'
 import {Link} from 'react-router-dom'
 
 export const ListItem = ({items, categories}) => {
+  console.log(items)
+  console.log(typeof items)
   return (
     <div className="list-items-container">
       {items.length > 0 ? items.map((item)=>{
