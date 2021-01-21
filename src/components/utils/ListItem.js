@@ -9,6 +9,7 @@ export const ListItem = ({items, categories}) => {
         const precio = item.price.amount.toString().split('').reverse().join('').match(/.{1,3}/g).join('.').split('').reverse()
         return(
           <section key={item.id} className="item-list">
+        {/* Enviando props por etiqueta Link para el breadcrumb*/}
             <Link to={{
               pathname:`/items/${item.id}`, 
               query: {categories}
