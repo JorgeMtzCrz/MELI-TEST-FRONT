@@ -10,6 +10,11 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.home-container {
+    height: 100vh;
+    background-color: #EEEEEE;
+}
+
 
 /*NAVBAR*/
 
@@ -168,6 +173,7 @@ button>img {
 }
 
 .info-item>img {
+    margin-left: 32px;
     width: 680px;
     height: auto;
 }
